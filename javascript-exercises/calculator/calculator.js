@@ -6,28 +6,24 @@ function subtract (a, b) {
 	return a - b;
 }
 
-function sum (lst) {
-	sum = 0;
-	for (val in lst) {
-		sum += val; 
-	}
-	return sum
+function sum (array) {
+	return array.reduce((total, current) => total + current, 0);
 }
 
-function multiply (lst) {
-	total = 1;
-	for (val in lst) {
-		total *= val;
-	}
-	return total
+function multiply (array) {
+	return array.reduce((total, current) => total * current, 1);
 }
 
-function power() {
-	
+function power(a, b) {
+	return Math.pow(a, b);
 }
 
-function factorial() {
-	
+function factorial(n) {
+	if (n === 0) {
+		return 1; 
+	} else {
+	return (n != 1) ? n * factorial(n - 1) : 1;
+	};
 }
 
 module.exports = {
