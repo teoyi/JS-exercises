@@ -1,0 +1,1 @@
+// Instead of using 'new' to create an object 
